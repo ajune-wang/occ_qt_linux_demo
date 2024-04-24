@@ -26,7 +26,7 @@ sudo apt install qt5-default
 .  
 
 ### OpenCASCADE
-下载  
+下载  780  
 https://codeload.github.com/Open-Cascade-SAS/OCCT/zip/refs/tags/V7_8_0  
 
 编译
@@ -44,3 +44,11 @@ PS：如果需要FreeType请编译并配置FreeType，建议安装CMAKE-GUI进�
 .   
 
 ## 二、拉取并配置项目
+拉取项目后用QtCreator打开demo.pro
+将occt.pri中的OCCPath改成你自己的安装路径
+```
+OCCPath=            /home/ajune/OCC/occ_src/OCCT-7_8_0/install
+```
+
+OK!  
+PS：Demo的视图操作器上没有字是因为没有Freetype噢~
